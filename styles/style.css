@@ -1,0 +1,412 @@
+* {
+    font-family: NotoSans-Medium, sans-serif;
+}
+html, h1, h2, h3, h4, p, a {
+    color: #070707;
+}
+h1 {
+    font-family: NotoSans-Bold, sans-serif;
+    font-size: 47px;
+}
+body {
+    background: #FFFFFF;
+}
+body._lock {
+    overflow: hidden;
+}
+/*
+    HEADER START
+*/
+header {
+    background: #FFFFFF;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+}
+header nav {
+    border-bottom: 1px solid  #828282;
+}
+header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 38px 0;
+    margin: 0;
+}
+
+header ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #828282;
+}
+header ul li a:hover {
+    transition: 0.3s;
+    font-weight: bold;
+    color: #070707;
+}
+header .activeLink {
+    font-weight: bold;
+    color: #070707;
+}
+/*MENU BURGER START*/
+.material-symbols-outlined {
+    font-size: 50px;
+    float: right;
+    font-weight: bold;
+}
+.menu_burger {
+    display: none;
+    justify-content: end;
+    align-items: center;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 999;
+    top:0;
+
+}
+.menu {
+    z-index: 999;
+    position: fixed;
+    background: #FFFFFF;
+    height: 100%;
+    display: none;
+}
+
+.menu__item {
+    display: block;
+    text-decoration: none;
+    font-size: 34px;
+    padding-top: 65px;
+    font-weight: bold;
+    color: #828282;
+}
+.menu__item:hover {
+    color: #070707;
+    transition: 0.3s;
+}
+.close span.material-symbols-outlined {
+    color: #828282;
+    padding-top: 65px;
+    padding-right: 10px;
+}
+.close span.material-symbols-outlined:hover {
+    color: #070707;
+    transition: 0.3s;
+}
+.menu_active {
+    display: block;
+}
+/* Lang */
+
+.lng-change:hover {
+    cursor: pointer;
+}
+.menuLang {
+    display: flex;
+    justify-content: end;
+}
+.menuLang span {
+    writing-mode: vertical-rl;
+    rotate: 180deg;
+    float: right;
+    margin-bottom: 12px;
+}
+.activeLang {
+    font-weight: bold;
+}
+/*MENU BURGER END*/
+/*
+    HEADER END
+//////////////////////
+    MAIN START
+*/
+.block {
+    padding-top: 128px;
+    padding-bottom: 102px;
+    /*border: 1px #0a3622 dashed;*/
+}
+/*
+    BLOCK FIRST START
+*/
+
+div.first h1 {
+    float: left;
+}
+div.first div.information {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+div.first div.information div{
+    margin-bottom: 12px;
+}
+div.first div.information span {
+    font-size: 18px;
+    color: #070707;
+    display: block;
+}
+div.first div.lang {
+    display: flex;
+    justify-content: end;
+}
+div.first div.lang span {
+    writing-mode: vertical-rl;
+    rotate: 180deg;
+    float: right;
+    margin-bottom: 12px;
+}
+div.first div.lang span a {
+    text-decoration: none;
+}
+div.first div.image {
+    margin-top: 55px;
+}
+
+.carousel-item-img {
+    object-fit: cover;
+    vertical-align: middle;
+    border-style: none;
+    height: 70vh;
+}
+
+@media screen and (max-width:992px) {
+    .carousel-item-img {
+        height: 40vh;
+    }
+}
+@media screen and (max-width:627px) {
+    .carousel-item-img {
+        height: 35vh;
+    }
+}
+@media screen and (max-width:460px) {
+    .carousel-item-img {
+        height: 23vh;
+    }
+}
+@media screen and (max-width:365px) {
+    .carousel-item-img {
+        height: 18vh;
+    }
+}
+/*
+    BLOCK FIRST END
+///////////////////////////////
+    BLOCK SECOND START
+*/
+div.second {
+    text-align: center;
+    background: #F6F6F6;
+}
+div.second h2{
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 34px;
+}
+div.second p {
+    font-size: 18px;
+    margin-bottom: 50px;
+
+}
+div.second div.textInformation {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+div.second div.textInformation div p:last-child {
+    margin-bottom: 0;
+}
+/*
+    BLOCK SECOND END
+////////////////////////////////
+    BLOCK THREE START
+*/
+.div.three {
+    background: #FFFFFF;
+}
+div.three h2 {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+div.three span {
+    font-size: 18px;
+}
+div.three div.programLabel {
+    margin-top: 23px;
+    font-size: 14px;
+    font-family: NotoSans-Bold, sans-serif;
+    text-align: center;
+}
+div.three div.textInformation {
+    margin-bottom: 90px;
+}
+div.three div.textInformation div{
+    text-align: center;
+}
+div.three div.programs img {
+    display: block;
+    margin: 0 auto;
+}
+div.three div.rating {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+div.three div.rating span {
+    font-size: 32px;
+    color: #E5E5E5;
+}
+div.three div.rating .activeStar {
+    color: #070707;
+}
+div.three div.programs img:hover {
+    animation: 1.2s ease-in-out 0s normal none infinite running trambling;
+}
+/*
+    BLOCK THREE END
+////////////////////////////////////
+    BLOCK FOURTH START
+*/
+div.fourth {
+    background: #F6F6F6;
+}
+div.fourth h2 {
+    font-size: 34px;
+    font-family: NotoSans-Bold, sans-serif;
+    text-align: center;
+    margin-bottom: 64px;
+}
+div.fourth img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+div.fourth a {
+    margin-top: 44px;
+    margin-bottom: 105px;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+/*
+    BLOCK FOURTH END
+///////////////////////////////////////
+    MAIN END
+///////////////////////////////////////
+    FOOTER START
+*/
+footer {
+    background: #FFFFFF;
+}
+footer h2 {
+    font-family: NotoSans-Bold, sans-serif;
+    font-size: 34px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+div.footer {
+    margin: 0 auto;
+}
+footer span.footerText {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 36px 0;
+}
+footer button {
+    background: #070707;
+    color: #FFFFFF;
+    font-size: 18px;
+    border-radius: 40px;
+    border: 0;
+    padding: 14px 30px;
+    font-family: NotoSans-Bold, sans-serif;
+    transition: all 0.3s ease;
+}
+footer div.footerBtn {
+    display: flex;
+    justify-content: center;
+}
+footer div.footerIcons {
+    margin-top: 80px;
+    margin-bottom: 45px;
+}
+footer div.footerIcons img{
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+}
+footer span.footerDescription {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #828282;
+}
+footer div.footerIcons div img:hover {
+    animation: 1.2s ease-in-out 0s normal none infinite running trambling;
+}
+footer button:hover {
+    transition: all 0.3s ease;
+    background: #FFFFFF;
+    border: 2px solid #070707;
+    color: #070707;
+    box-shadow: 4px 3px 3px 1px;
+}
+/*
+    FOOTER END
+*/
+@media (max-width: 576px) {
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 28px !important;
+    }
+
+    .block {
+        padding: 70px 0 60px;
+    }
+    .first {
+        margin-top: 30px;
+    }
+    .menu_burger {
+        display: flex;
+        margin-right: 10px;
+    }
+    header {
+        background: none;
+        position: absolute;
+        z-index: 1;
+    }
+    header nav {
+        border: 0;
+    }
+    header nav ul{
+        display: none;
+    }
+    div.first {
+        padding-top: 0;
+    }
+    div.first div.information {
+        justify-content: start;
+    }
+    div.lang span{
+        display: none;
+    }
+}
+@keyframes trambling {
+    0%, 50%, 100% {
+        transform: rotate(0deg);
+    }
+    10%, 30% {
+        transform: rotate(-10deg);
+    }
+    20%, 40% {
+        transform: rotate(10deg);
+    }
+}
